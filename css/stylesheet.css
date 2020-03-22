@@ -192,3 +192,27 @@
 	font-size: 20px;
 	margin: 5px;
 }
+
+.demo-images {
+	height: 100%;
+	width: 100%;
+	padding: 0%;
+}
+
+.demo-images:hover {
+	height: 100%;
+	width: 100%;
+	padding: 0%;
+	cursor: pointer;
+}
+
+.demo-images img {
+	height: 100%;
+	width: 100%;
+}
+
+.demo-images img:hover {
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
