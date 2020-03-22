@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+</head>
+	
+<body>
+	<table width="100%">
+		<tr>
+			<td>
+				<table width="100%" id="top" border="1">
+					<tr valign="bottom">
+						<td width="10%"></td>
+						<td width="3%"></td>
+						<td width="17%"><img width="100%" src="img/logo.png" alt="logo"/></td>
+						<td width="57%" align="right"><font id="proj-name">UNC Refferring Expressions</font></td>
+						<td width="3%"></td>
+						<td width="10%"></td>
+					</tr>
+					<tr>
+						<td width="10%"></td>
+						<td width="80%" colspan="4" height="45px">
+							<table height="100%" width="100%" id="navbar" style="border-collapse:collapse;empty-cell:show;">
+								<tr height="100%" valign="middle" id="nav-content">
+									<td width="12%"><a href=""><font>Home</font></a></td>
+									<td width="12%"><a href=""><font>Demo</font></a></td>
+									<td width="12%"><a href=""><font>Paper</font></a></td>
+									<td width="64%" id="nav-static"></td>
+								</tr>
+							</table>
+						</td>
+						<td width="10%"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width="100%" id="middle" border="1">
+					<tr>
+						<td width="9%"></td>
+						<td width="82%">
+							<table height="100%" width="100%" id="container" border="1">
+								<tr>
+									<td>
+										<div id="proj-title">
+							 				<font>Referring Expression Comprehension Demo using MAttNet</font>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="guidance">
+											<font>Click on one of those images for comprehension:</font>
+											<button type="button" id="show-more-btn">Show More</button>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="9%"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<table height="100%" width="100%" id="img-container" border="1">
+								<tr>
+									<td width="20%" height="160px"></td>
+									<td width="20%" height="160px"></td>
+									<td width="20%" height="160px"></td>
+									<td width="20%" height="160px"></td>
+									<td width="20%" height="160px"></td>
+								</tr>
+								<tr>
+									<td width="20%" height="160px"></td>
+									<td width="20%" height="160px"></td>
+									<td width="20%" height="160px"></td>
+									<td width="20%" height="160px"></td>
+									<td width="20%" height="160px"></td>
+								</tr>
+							</table>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<div class="guidance">
+								<p></p>
+								<p class="paragraph"><font>or Enter image web url:</font></p>
+								<input type="url" placeholder="Image url here" class="input-box">
+								<button class="submit-btn">Submit</button>
+								<p></p>
+								<p class="paragraph"><font>or Choose a file / Drag a file here:</font></p>
+								<!--todo-->
+								<button class="submit-btn">Upload</button>
+								<p></p>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<table width="100%">
+								<tr>
+									<td>
+										<div id="results">
+											<font>Comprehension Results</font>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table width="100%">
+											<tr>
+												<td width="33%" align="center">
+													<img src="img/chosen.png" alt="Chosen Image" width="100%"/>
+													<p class="img-info">Chosen Image</p>
+												</td>
+												<td width="33%" align="center">
+													<img src="img/result.png" alt="Comprehension Result" width="100%"/>
+													<p class="img-info">Comprehension Result</p>
+												</td>
+												<td width="33%" align="center">
+													<img src="img/attention.png" alt="Language Attention" width="100%"/>
+													<p class="img-info">Language Attention</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input placeholder="Enter the referring expression..." class="input-box">
+										<button class="submit-btn">Submit</button>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td width="100%" align="center" id="info"><font>Powered by Colab, BUAA</font></td></tr>
+	</table>
+</body>
+</html>
