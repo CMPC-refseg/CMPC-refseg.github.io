@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Project Demo</title>
+	<title>Image Segmentation Demo</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
 	<script type="text/javascript" src="lib/jQuery.js"></script>
 	<script type="text/javascript" src="scripts/scripts.js"></script>
@@ -17,7 +17,7 @@
 						<td width="10%"></td>
 						<td width="3%"></td>
 						<td width="17%"><img width="100%" src="img/logo.png" alt="logo"/></td>
-						<td width="57%" align="right"><font id="proj-name">Refferring Expressions</font></td>
+						<td width="57%" align="right"><font id="proj-name">Referring Image Segmentation</font></td>
 						<td width="3%"></td>
 						<td width="10%"></td>
 					</tr>
@@ -48,7 +48,7 @@
 								<tr>
 									<td>
 										<div id="proj-title">
-							 				<font>Referring Expression Comprehension Demo using MAttNet</font>
+							 				<font>Referring Image Segmentation via Cross-Modal Progressive Comprehension</font>
 										</div>
 									</td>
 								</tr>
@@ -132,8 +132,8 @@
 							<div class="guidance">
 								<p></p>
 								<p class="paragraph"><font>or Enter image web url:</font></p>
-								<input type="url" placeholder="Image url here" class="input-box">
-								<button class="submit-btn">Submit</button>
+								<input type="url" placeholder="Image url here" class="input-box" id="img-url">
+								<button class="submit-btn" onClick="submitImageUrl()" id="img-url-submit-btn">Submit</button>
 								<p></p>
 								<p class="paragraph"><font>or Choose a file a file here:</font></p>
 								<!--todo-->
