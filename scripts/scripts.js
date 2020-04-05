@@ -1,6 +1,6 @@
 // JavaScript Document
 'use strict';
-var id_chosen;
+var id_chosen = -1;
 
 function resetComprehensionResult() {
 	$("#result").attr("src", "img/result.png");
@@ -16,6 +16,8 @@ function submitDemoImage(src,id) {
 }
 
 function showResult() {
+	if (id_chosen==-1)
+		alert("Please choose an image!")
     $("#result").attr("src", "result_image/result"+id_chosen+".png");
 }
 
