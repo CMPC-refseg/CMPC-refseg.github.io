@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Image Segmentation Demo</title>
+	<title>Referring Image Segmentation</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
 	<script type="text/javascript" src="lib/jQuery.js"></script>
 	<script type="text/javascript" src="scripts/scripts.js"></script>
@@ -16,7 +16,7 @@
 					<tr valign="bottom">
 						<td width="10%"></td>
 						<td width="3%"></td>
-						<td width="17%"><a  href="https://www.colalab.org" ><img width="100%" src="img/logo.png" alt="logo"/></a></td>
+						<td width="17%"><a  href="http://colalab.org" ><img width="100%" src="img/logo.png" alt="logo"/></a></td>
 						<td width="57%" align="right"><font id="proj-name">Referring Image Segmentation</font></td>
 						<td width="3%"></td>
 						<td width="10%"></td>
@@ -26,9 +26,10 @@
 						<td width="80%" colspan="4" height="45px">
 							<table height="100%" width="100%" id="navbar" style="border-collapse:collapse;empty-cell:show;">
 								<tr height="100%" valign="middle" id="nav-content">
-									<td width="12%"><a href="https://www.colalab.org"><font>Home</font></a></td>
+									<td width="12%"><a href="http://colalab.org"><font>Home</font></a></td>
 									<td width="12%"><a href="https://cmpc-refseg.github.io"><font>Demo</font></a></td>
-									<td width="12%"><a href=""><font>Paper</font></a></td>
+									<td width="12%"><a href="" onclick="showMessage()"><font>Paper</font></a></td>
+									<td width="12%"><a href="" onclick="showMessage()"><font>Code</font></a></td>
 									<td width="64%" id="nav-static"></td>
 								</tr>
 							</table>
@@ -48,7 +49,7 @@
 								<tr>
 									<td>
 										<div id="proj-title">
-							 				<font>Referring Image Segmentation via Cross-Modal Progressive Comprehension</font>
+							 				<font>Referring Image Segmentation via Cross-Modal Progressive Comprehension (CVPR2020)</font>
 										</div>
 									</td>
 								</tr>
@@ -56,7 +57,7 @@
 									<td>
 										<div class="guidance">
 											<font>Click on one of those images for comprehension:</font>
-											<button type="button" id="show-more-btn">Show More</button>
+											<button type="button" id="show-more-btn" onclick="showMessage()">Show More</button>
 										</div>
 									</td>
 								</tr>
@@ -173,7 +174,17 @@
 				</table>
 			</td>
 		</tr>
-		<tr><td width="100%" align="center" id="info"><a  href="https://www.colalab.org" ><font>Powered by Colab, BUAA</font></a></td></tr>
+		<tr>
+			<td width="100%" align="center" id="info"><font>
+			<br><br>
+			Powered by <a  href="http://colalab.org">Colab</a>, BUAA
+			<br>
+			Due to the limited resource, we made some pre-processed examples for you to show the performance.
+			<br>
+			You can view source code at <a  href="" onclick="showMessage()">github</a>
+			</font></td>
+			
+		</tr>
 	</table>
 </body>
 </html>

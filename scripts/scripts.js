@@ -18,9 +18,14 @@ function submitDemoImage(src,id) {
 function showResult() {
 	if (id_chosen==-1)
 		alert("Please choose an image!")
-    $("#result").attr("src", "result_image/result"+id_chosen+".png");
+	else
+		$("#result").attr("src", "result_image/result"+id_chosen+".png");
 }
 
 function setExpression(data) {
 	document.getElementById("expression").innerHTML=data;
+}
+
+function showMessage(data) {
+	alert("Coming soon...");
 }
