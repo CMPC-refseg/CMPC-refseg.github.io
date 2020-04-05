@@ -16,7 +16,7 @@
 					<tr valign="bottom">
 						<td width="10%"></td>
 						<td width="3%"></td>
-						<td width="17%"><img width="100%" src="img/logo.png" alt="logo"/></td>
+						<td width="17%"><a  href="https://www.colalab.org" ><img width="100%" src="img/logo.png" alt="logo"/></a></td>
 						<td width="57%" align="right"><font id="proj-name">Referring Image Segmentation</font></td>
 						<td width="3%"></td>
 						<td width="10%"></td>
@@ -26,8 +26,8 @@
 						<td width="80%" colspan="4" height="45px">
 							<table height="100%" width="100%" id="navbar" style="border-collapse:collapse;empty-cell:show;">
 								<tr height="100%" valign="middle" id="nav-content">
-									<td width="12%"><a href=""><font>Home</font></a></td>
-									<td width="12%"><a href=""><font>Demo</font></a></td>
+									<td width="12%"><a href="https://www.colalab.org"><font>Home</font></a></td>
+									<td width="12%"><a href="https://cmpc-refseg.github.io"><font>Demo</font></a></td>
 									<td width="12%"><a href=""><font>Paper</font></a></td>
 									<td width="64%" id="nav-static"></td>
 								</tr>
@@ -71,54 +71,54 @@
 								<tr>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img0" onclick="submitDemoImage(this.src)"/>
+											<img src="source_image/source0.png" alt="img0" onclick="submitDemoImage(this.src,this.id)" id="0"/>
 										</div>
 									</td>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img1" onclick="submitDemoImage(this.src)"/>
+											<img src="demo/QQImage20200209201334.jpg" alt="img1" onclick="submitDemoImage(this.src,this.id)"/>
 										</div>
 									</td>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img2" onclick="submitDemoImage(this.src)"/>
+											<img src="demo/QQImage20200209201334.jpg" alt="img2" onclick="submitDemoImage(this.src,this.id)"/>
 										</div>
 									</td>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img3" onclick="submitDemoImage(this.src)"/>
+											<img src="demo/QQImage20200209201334.jpg" alt="img3" onclick="submitDemoImage(this.src,this.id)"/>
 										</div>
 									</td>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img4" onclick="submitDemoImage(this.src)"/>
+											<img src="demo/QQImage20200209201334.jpg" alt="img4" onclick="submitDemoImage(this.src,this.id)"/>
 										</div>
 									</td>
 								</tr>
 								<tr>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img5" onclick="submitDemoImage(this.src)"/>
+											<img src="demo/QQImage20200209201334.jpg" alt="img5" onclick="submitDemoImage(this.src,this.id)"/>
 										</div>
 									</td>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img6" onclick="submitDemoImage(this.src)"/>
+											<img src="demo/QQImage20200209201334.jpg" alt="img6" onclick="submitDemoImage(this.src,this.id)"/>
 										</div>
 									</td>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img7" onclick="submitDemoImage(this.src)"/>
+											<img src="demo/QQImage20200209201334.jpg" alt="img7" onclick="submitDemoImage(this.src,this.id)"/>
 										</div>
 									</td>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img8" onclick="submitDemoImage(this.src)"/>
+											<img src="demo/QQImage20200209201334.jpg" alt="img8" onclick="submitDemoImage(this.src,this.id)"/>
 										</div>
 									</td>
 									<td width="20%" height="160px">
 										<div class="demo-images">
-											<img src="demo/QQImage20200209201334.jpg" alt="img9" onclick="submitDemoImage(this.src)"/>
+											<img src="demo/QQImage20200209201334.jpg" alt="img9" onclick="submitDemoImage(this.src,this.id)"/>
 										</div>
 									</td>
 								</tr>
@@ -126,30 +126,15 @@
 						</td>
 						<td></td>
 					</tr>
+					
 					<tr>
 						<td></td>
 						<td>
-							<div class="guidance">
-								<p></p>
-								<p class="paragraph"><font>or Enter image web url:</font></p>
-								<input type="url" placeholder="Image url here" class="input-box" id="img-url">
-								<button class="submit-btn" onClick="submitImageUrl()" id="img-url-submit-btn">Submit</button>
-								<p></p>
-								<p class="paragraph"><font>or Choose a file a file here:</font></p>
-								<!--todo-->
-								<button class="submit-btn">Upload</button>
-								<p></p>
-							</div>
-						</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>
-							<table width="100%">
+							<table width="90%">
 								<tr>
 									<td>
 										<div id="results">
+											<br><br><br>
 											<font>Comprehension Results</font>
 										</div>
 									</td>
@@ -162,17 +147,13 @@
 									<td>
 										<table width="100%">
 											<tr>
-												<td width="33%" align="center">
-													<img src="img/chosen.png" alt="Chosen Image" width="100%"  id="chosen"/>
+												<td width="50%" align="center">
+													<img src="img/chosen.png" alt="Chosen Image" width="90%"  id="chosen"/>
 													<p class="img-info">Chosen Image</p>
 												</td>
-												<td width="33%" align="center">
-													<img src="img/result.png" alt="Comprehension Result" width="100%" id="result"/>
-													<p class="img-info">Comprehension Result</p>
-												</td>
-												<td width="33%" align="center">
-													<img src="img/attention.png" alt="Language Attention" width="100%" id="attention"/>
-													<p class="img-info">Language Attention</p>
+												<td width="50%" align="center">
+													<img src="img/result.png" alt="Comprehension Result" width="90%" id="result"/>
+													<p class="img-info">Result Image</p>
 												</td>
 											</tr>
 										</table>
@@ -180,8 +161,9 @@
 								</tr>
 								<tr>
 									<td>
-										<input placeholder="Enter the referring expression..." class="input-box" id="expression">
-										<button class="submit-btn">Submit</button>
+										<p class="paragraph"><strong>Referring expression:</strong></p>
+										<p class="guidance" id="expression">Expression will be showed here</p>
+										<button class="submit-btn" onclick="showResult()">Show!</button>
 									</td>
 								</tr>
 							</table>
@@ -191,7 +173,7 @@
 				</table>
 			</td>
 		</tr>
-		<tr><td width="100%" align="center" id="info"><font>Powered by Colab, BUAA</font></td></tr>
+		<tr><td width="100%" align="center" id="info"><a  href="https://www.colalab.org" ><font>Powered by Colab, BUAA</font></a></td></tr>
 	</table>
 </body>
 </html>
